@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>tables</h2>
+
+    <table border="5" cellspacing="10" cellpadding="10" bgcolor="lightblue">
+    <!-- heading of table -->
+        <thead>
+            <tr>
+                <th>time table</th>
+                <th>1 period</th>
+                <th>2 period</th>
+                <th>3 period</th>
+                <th>4 period</th>
+                
+            </tr>
+
+        </thead>
+
+        <!-- body of table -->
+        <tbody>
+            <tr>
+                <td>monday</td>
+                <td>maths</td>
+                <td rowspan="4">english</td>
+                <td>games</td>
+                <td rowspan="2">hindi</td>
+            </tr>
+            <tr>
+                <td>tues</td>
+                <td>maths</td>
+                <!-- <td>english</td> -->
+                <td>games</td>
+                <!-- <td>hindi</td> -->
+
+            </tr>
+            <tr>
+                <td>wed</td>
+                <td>maths</td>
+                <!-- <td>english</td> -->
+                <td colspan="2">games</td>
+                <!-- <td>games</td> -->
+
+            </tr>
+            <tr>
+                <td>thurs</td>
+                <td>maths</td>
+                <!-- <td>english</td> -->
+                <td>games</td>
+                <td>hindi</td>
+
+            </tr>
+
+        </tbody>
+
+        <!-- footer of table -->
+        <tfoot>
+            <tr>
+                <th colspan="5">time table for nagarro</th>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+</html>
