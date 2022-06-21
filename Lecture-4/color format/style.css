@@ -1,0 +1,21 @@
+/* hexadecimal way of coloring */
+/* #a{
+    color: #1234ff;
+} */
+
+/* rgb way of coloring */
+/* #b{
+    color: rgb(200, 30, 250);
+} */
+
+/* rgba way of coloring */
+
+
+#cc{
+    width: 200px;
+    height: 200px;
+}
+
+#cc{
+    background-color: rgba(120, 23, 34, 1);
+}

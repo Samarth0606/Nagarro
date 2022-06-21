@@ -1,0 +1,34 @@
+
+/* descendant comb. */
+/* section ul li{
+    color:aquamarine;
+}
+
+section li{
+    border: 2px solid black;
+} */
+
+
+/* child comb */
+
+/* section > div > ul > li{
+    background-color: bisque;
+}
+
+div > ul > li{
+    border: 2px dotted orangered;
+} */
+
+/* /adjscent sibling  --> only the right side or below element will be encountered */
+
+/* article + div{
+    background-color: brown;
+} */
+
+/* general siblings */
+article ~ div{
+    background-color: blue;
+}
+
+
+

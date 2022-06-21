@@ -1,0 +1,25 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+
+/* hover */
+/* div:hover{
+    background-color: green;
+    border-radius: 50%;
+} */
+
+/* /active/ */
+/* div:active{
+    background-color: yellow;
+} */
+
+/* visited */
+
+/* a:visited{
+    color:green;
+} */
+
+

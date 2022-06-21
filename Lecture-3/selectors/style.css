@@ -1,0 +1,53 @@
+/* element seslctors */
+
+/* a{
+    color:aqua;
+}
+
+p{
+    font-size: 40px;
+} */
+
+/* universal selectors */
+
+/* *{
+    border: 2px solid black;
+} */
+
+
+/* id selector */
+
+/* #nagarro{
+    text-decoration: line-through;
+
+}
+
+#codingblocks{
+    font-size: 30px;
+    background-color: antiquewhite;
+} */
+
+
+/* class selectors */
+/* .evening{
+    text-decoration: overline;
+    color: coral;
+    background-color: cadetblue;
+}
+
+
+.para{
+    border: 2px dotted red;
+} */
+
+
+/* attributeselector */
+
+a[href="https://facebook.com"]{
+    font-size: 40px;
+}
+
+input[type="text"]{
+    background-color: blue;
+    border: 13px solid rgb(128, 0, 0);
+}

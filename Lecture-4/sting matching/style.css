@@ -1,0 +1,22 @@
+
+/* starts with string matching */
+/* a[href^="https://"]{
+    font-size: 30px;
+} */
+
+/* ends with */
+/* a[href$=".com"]{
+    border: 3px solid black;
+} */
+
+/* present anywhere */
+
+/* a[href*="://"]{
+    color: red;
+    font-size: 30px;
+    border: 2px solid green;
+} */
+
+
+
+
