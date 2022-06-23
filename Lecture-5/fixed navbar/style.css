@@ -1,0 +1,22 @@
+li{
+    display: inline-block;
+    margin-left: 30px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div{
+    background-color: black;
+    /* position: sticky; */
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
+a{
+    text-decoration:none ;
+    color: azure;
+}
+
+li:last-child{
+    position: absolute;
+    right: 50px;
+}

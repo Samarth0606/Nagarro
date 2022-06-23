@@ -1,0 +1,54 @@
+h1{
+    font-size: 100px;
+    color: red;
+
+}
+ul{
+    background-color: green;
+}
+
+
+
+/* in case if mmaximum width large px has to be in the top */
+
+/* @media all and (max-width:780px){
+    h1{
+        color:yellow;
+        font-size: 25px;
+
+    }
+    ul{
+        background-color: aqua;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width:580px){
+    
+    ul{
+        background-color: rgb(255, 0, 247);
+        border: 5px solid rgb(143, 150, 18);
+    }
+} */
+
+
+/* in case if minimum width large px has to be in the bottom */
+/* @media screen and (min-width:580px){
+    
+    ul{
+        background-color: rgb(255, 0, 247);
+        border: 5px solid rgb(143, 150, 18);
+    }
+}
+@media all and (min-width:780px){
+    h1{
+        color:yellow;
+        font-size: 25px;
+
+    }
+    ul{
+        background-color: aqua;
+        border: 2px solid black;
+    }
+} */
+

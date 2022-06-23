@@ -1,0 +1,32 @@
+/* img{
+    
+    float:left;
+} */
+/* #clearr{
+    clear: right ;
+    margin: 20px;
+    padding: 20px;
+
+} */
+
+div:nth-of-type(2){
+    background-color: red;
+    width: 80vw;
+    height: 80vh;
+    background-image: url(https://images.unsplash.com/photo-1653656091374-01908fbbcf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* opacity: 0.4; */
+    /* filter: grayscale(100%); */
+    background-size: contain;
+    cursor: pointer;
+
+    /* border-radius: 50% ; */
+    /* border-left: 8px; */
+    /* border-radius: 15% 15% 5% 45%; */
+    /* border: 12px dotted blue ; */
+    border-left: 12px solid green;
+    border-right: 12px solid rgb(58, 64, 58);
+    border-top: 12px solid rgb(115, 128, 0);
+    border-bottom: 12px solid rgb(128, 0, 85);
+}
