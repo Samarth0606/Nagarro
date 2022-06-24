@@ -1,0 +1,16 @@
+/* css variable in making */
+:root{
+    --color-of-div:#1090ff;
+    --text-color:rgb(232, 19, 19);
+
+}
+
+
+div{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: var(--color-of-div);
+    color: var(--text-color);
+    display: inline-block;
+}
