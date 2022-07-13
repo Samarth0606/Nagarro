@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
-/* Resetting the document */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Style the header */
 header {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%,
                                      rgba(253,29,29,1) 50%, 
@@ -51,7 +49,6 @@ input {
   color: #FFF;
 }
 
-/* Style the list items */
 ul li {
   cursor: pointer;
   position: relative;
@@ -63,31 +60,29 @@ ul li {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
-  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
   background: #b2bec3;
 }
 
-/* Darker background-color on hover */
+
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
+
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+
 ul li.checked::before {
   content: "";
   position: absolute;
@@ -101,7 +96,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the trash button */
+
 .far {
   position: absolute;
   right: 0;
