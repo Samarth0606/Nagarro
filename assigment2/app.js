@@ -30,7 +30,8 @@ function a(){
     console.log(x);
 }
 a();
-
+//100
+//Assigment to a constant is not allowed
 // -----------------------------------
 
 function a(){
@@ -38,7 +39,8 @@ function a(){
 }
 a();
 var x=2   
-
+//undefined
+//undefined
 // -----------------------------------
 
 let x;
@@ -47,6 +49,8 @@ function b(){
 }
 b();
 x=2;
+//udefined
+//2
 // -----------------------------------
 
 function a(){
@@ -54,7 +58,7 @@ function a(){
 }
 a();
 let x=2 
-
+//error: x is not defined
 
 // -----------------------------------
 
@@ -70,7 +74,10 @@ let b=2;
 }
 
 console.log(b);
-
+//10
+//20
+//30
+//2
 // ----------------------------------
  
 
@@ -84,7 +91,8 @@ console.log(b);
  var z =  x();
  console.log(z);
  z();
-
+//y(){ console.log(x) }
+//7
 // ----------------------------------
 
 
@@ -96,7 +104,7 @@ function x(){
     }
 }
 x();
-
+//6 printed 6 times in interval of 1 sec
 // ----------------------------------
 
 
@@ -112,7 +120,13 @@ function x(){
     }
 }
 x();
-
+//interview is printed 6 times in interval of 1 sec
+//0
+//1
+//2
+//3
+//4
+//5
 // -----------------------------------
 
 const person = {
@@ -124,8 +138,16 @@ const person = {
 }
 
 // question1: make copy of the object and manipulate values inthe new copied object
+let newObj = person;
+    newObj.name:"codingblocks",
+    newObj.age:20,
+    newObj.isAutherised: true,
+    newObj.isUnicorn: false,
+    newObj.bestDomain:"programming" 
 // question2: print all the properties using appropriate for loop 
-
+for( i in newObj ){
+    console.log(i);
+}
 
 
 
