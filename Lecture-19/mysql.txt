@@ -1,0 +1,78 @@
+movies> db.hindiMovies.deleteOne({imdb:5.3})
+{ acknowledged: true, deletedCount: 1 }
+movies> db.hindiMovies.find({})
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f8"),
+    name: 'superman',
+    year: 2010,
+    imdb: 6.7,
+    isWatched: false
+  },
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> db.hindiMovies.deleteOne({imdb:{$eq:6.7}})
+{ acknowledged: true, deletedCount: 1 }
+movies> db.hindiMovies.find({})
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> db.hindiMovies.find({year:{$gt:2010}});
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> db.hindiMovies.find({year:{$lt:2010}});
+
+movies> db.hindiMovies.find({year:{$in:[2009 , 2010, 2011, 2012, 2013] }});
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> db.hindiMovies.find({year:{$in:[2009 , 2010, 2011, 2013] }});
+
+movies> db.hindiMovies.find({$and:[{year: {$gt:2010}},{imdb:{$gt:8}}]});
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> db.hindiMovies.find({$and:[{year: {$gt:2014}},{imdb:{$gt:8}}]});
+
+movies> db.hindiMovies.find({$or:[{year: {$gt:2014}},{imdb:{$gt:8}}]});
+[
+  {
+    _id: ObjectId("62e3edfcf7a9953d2aa583f9"),
+    name: 'superman2 ',
+    year: 2012,
+    imdb: 9.3,
+    isWatched: false
+  }
+]
+movies> 

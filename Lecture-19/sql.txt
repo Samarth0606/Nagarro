@@ -1,0 +1,50 @@
+( --  is your comments so ignore them)
+
+CREATE DATABASE nagarro;
+
+-- CREATE TABLE students(
+--     student_id INT PRIMARY KEY AUTO_INCREMENT,
+--     name VARCHAR(20) UNIQUE NOT NULL,
+--     major VARCHAR(20) DEFAULT 'NOT DECIDED'
+-- );
+
+-- or
+
+-- CREATE TABLE students(
+--     student_id INT,
+--     name VARCHAR(20),
+--     major VARCHAR(20),
+--     PRIMARY KEY(student_id);
+-- );
+
+ALTER TABLE students ADD gpa DECIMAL(3,2);
+ALTER TABLE students DROP COLUMN gpa;
+
+SELECT * FROM students;
+
+INSERT INTO students VALUES(2 , "SAMARTH" , "WEB");
+INSERT INTO students VALUES(4 , "SAMARTH" , "WEB-dev");
+INSERT INTO students VALUES(1 , "ZEESHAN" , "WEB");
+INSERT INTO students (student_id , name) VALUES(5 , "abhishek");
+
+UPDATE students SET major = "app" WHERE name = "abhishek";
+UPDATE students SET name = "sam" WHERE student_id = 2;
+
+UPDATE students SET name = "zee" , major = "developement" WHERE student_id = 1;
+
+DELETE FROM students WHERE student_id = 5;
+-- DELETE FROM students;
+
+SELECT name , student_id FROM students
+-- ORDER BY name  ASC;
+ORDER BY name  DESC;
+
+SELECT * FROM students
+LIMIT 3;
+
+SELECT * FROM students
+WHERE name IN ('zee');
+
+
+DROP TABLE students;
+DESCRIBE students;
