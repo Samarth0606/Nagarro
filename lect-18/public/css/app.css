@@ -1,0 +1,18 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    font-size: 1.5rem;
+}
+li{
+    border: 2px solid black;
+    margin: 16px auto;
+    padding: 16px;
+    border-radius: 8px;
+    width: 400px;
+}
