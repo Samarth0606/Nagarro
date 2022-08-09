@@ -10,6 +10,8 @@ const flash =  require('connect-flash');
 const {isLoggedIn} =  require('./middleware');
 
 const authRoutes = require('./routes/authRoutes');
+const postsApiRoute = require('./routes/api/posts'); //requing the posts.js route
+
 
 
 
@@ -30,6 +32,7 @@ app.set('view engine' , 'ejs');
 app.set('views' , path.join(__dirname,'/views'));
 app.use(express.static(path.join(__dirname , '/public')));
 app.use(express.urlencoded({extended:true}));  // helps you to get the form data inside console
+app.use(express.json());  // helps you to get the json data inside console
 
 
 app.use(session({
@@ -55,12 +58,13 @@ app.use(session({
 
 //using the routes here
 app.use(authRoutes);
+app.use(postsApiRoute);
 
 
 app.get('/', isLoggedIn ,(req,res)=>{
     // res.send("welcome to twitter clone");
     
-        res.render('home');
+        res.render('layouts/main-layout');
    
 })
 
