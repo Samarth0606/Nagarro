@@ -21,7 +21,12 @@ const userScheama = new mongoose.Schema({
     profilePic:{
         type:String,
         default:'/images/profilePic.jpeg'
-    }
+    },
+    //changes
+    likes:[{
+        type: mongoose.Schema.Types.ObjectId,    //changes
+        ref:'Post',
+    }]
 
 });
 

@@ -1,52 +1,49 @@
 
 <%- include("../partials/header") %>
-
 <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
+    <div class="container">
         <div class="row">
+            
             <nav class="col-2">
-                <!-- icons here -->
-                
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fas fa-home"></i></a>
-                                    <a href="#"><i class="fas fa-search"></i></a>
-                                    <a href="#"><i class="fas fa-bell"></i></a>
-                                    <a href="#"><i class="far fa-envelope"></i></a>
-                                    <a href="#"><i class="fas fa-user"></i></a>
-                                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
-
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-home"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#"><i class="far fa-bell"></i></a>
+                <a href="#"><i class="far fa-envelope"></i></a>
+                <a href="#"><i class="far fa-user"></i></a>
+                <a href="/logout"><i class="fas fa-sign-out-alt"></i></a>
             </nav>
-            <div class="main-container col-10 col-md-8 col-lg-6">
-                <!-- main content here -->
-                <h1 class="fw-bold titleContainer"> HOME </h1>
-
+            
+            <div class="main-content-container col-10 col-md-8 col-lg-6">
+                <h1 class="fw-bold titleContainer">Home</h1>
                 <div class="mb-3 postContainer">
                     <div class="userImageContainer">
-                        <img src="/images/profilePic.jpeg" alt="user image">
+                        <img src="/images/profilePic.jpeg" alt="User Profile">
                     </div>
+                    
                     <div class="textareaContainer">
-                        <textarea id="post-text" cols="30" rows="3" placeholder="whats? up"></textarea>
-                        <button id="submitPostbutton">Post</button>
+                        
+                            <textarea id="post-text" name="" id="" cols="30" rows="3" placeholder="What's happening?"></textarea>
+                            <button id="submitPostButton" type="submit">Post</button>
+                      
                     </div>
 
+                   
                 </div>
-
-                <!-- field for my tweets -->
-                <div class="mb-3">
-                    <ul id="allTweets"></ul>
+                <div>
+                    <div class="postsContainer"></div>
                 </div>
-
-
-
-
-
+                
             </div>
-            <div class="d-none d-md-block col-md-2 col-lg-4">Third Div</div>
+            <div class="d-none d-md-block col-md-2 col-lg-4">Third Column</div>
         </div>
+    </div>
 
-        <!-- //common.js file for functionality of the tweet -->
-        <script src="/js/common.js"></script>
-        
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/jQuery.js"></script>
+<script src="/js/common.js"></script>
 <%- include("../partials/footer") %>
+
