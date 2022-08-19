@@ -3,7 +3,8 @@ const isLoggedIn = (req,res,next)=>{
         return res.redirect('/login');
     }
     next();
-
 }
 
-module.exports = {isLoggedIn};
+module.exports = {
+    isLoggedIn
+}

@@ -1,5 +1,11 @@
 <%- include('../partials/header')%>
 
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+<!-- header ends here -->
+
 
 <div class="container">
     <div class="row">
@@ -9,19 +15,15 @@
         </div>
         
         <div class="col-lg-6 mt-4">
-                <h1>Sign-up Page</h1>
-
+                <h1 class="text-center">Sign-up Page</h1>
                 <div class="mb-3">
-                    <% if(message && message.length){ %>
-                        <p><%= message %></p>
-
-                    <% } %>
-                    
+                    <%if(message && message.length){%>
+                    <p><%= message %></p>
+                    <%}%>
                 </div>
 
-
                 <form action="/register" method="POST">
-                    <div class="mb-3">
+                    <div class="mb-3 logincontainer">
                         <input type="text" class="form-control" name="firstname" id="" placeholder="firstname">
                     </div>
                     <div class="mb-3">
@@ -36,7 +38,16 @@
                     <div class="mb-3">
                         <input type="password" class="form-control" name="password" id="" placeholder="password">
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit</button>
+
+                    <!-- //adding new -->
+                    <div class="mb-3">
+                        <p><a href="/login">Already have an account? Login here</a></p>
+                    </div>
+
+                    <!-- adding boostrap btn -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
                 </form>
 
             </div>

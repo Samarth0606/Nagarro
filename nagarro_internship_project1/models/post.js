@@ -4,20 +4,22 @@ const mongoose = require('mongoose');
 const postSchema = new mongoose.Schema({
     content: {
         type: String,
-        trim: true      //changes
+        trim: true
     },
     postedBy: {
-        type: mongoose.Schema.Types.ObjectId,    //changes
-        ref:'User', //changes (storing the complete user instead of just the postedBy
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
     },
-    //addition
-    likes:[{
-        type: mongoose.Schema.Types.ObjectId,    //changes
-        ref:'User',
-    }]
-} , {timestamps:true});  //changes
+    likes:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:'User'
+        }
+    ]
+
+}, { timestamps: true });
 
 
-const Post = mongoose.model("Post", postSchema);
+const Post = mongoose.model('Post', postSchema);
 
 module.exports = Post;
